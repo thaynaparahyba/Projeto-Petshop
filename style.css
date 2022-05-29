@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family:'Poppins','Times New Roman', Times, serif ;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#presentation{
+    background-image: url(./dogs\ and\ cats.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#presentation h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: lemonchiffon;
+}
+#presentation .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: gold;
+    background-color: transparent;
+    border: 2px solid gold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+}
+#presentation .cta:hover{
+    color: white;
+    font-weight: 500;
+    background: goldenrod;
+}
+#presentation h1 span{
+    position: absolute;
+    top: o;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+#presentation:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
